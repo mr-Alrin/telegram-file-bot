@@ -3,11 +3,10 @@ from pymongo import MongoClient
 import os
 
 # Load environment variables correctly
-BOT_TOKEN = os.environ.get("7743489209:AAEwyaWftk_9WiYWM6exT7sjLxJLc4X-Tf0")
-API_ID = int(os.environ.get("34411805"))
-API_HASH = os.environ.get("f10c95e5c2af623eaf9fa81dd6695e59")
-DB_URI = os.environ.get("mongodb+srv://alrin01:anubhav%40123@cluster0.0l1f6oi.mongodb.net/?appName=Cluster0")
-
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+API_ID = int(os.environ.get("API_ID"))
+API_HASH = os.environ.get("API_HASH")
+DB_URI = os.environ.get("DB_URI")
 # Initialize bot
 bot = Client("FileStoreBot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
